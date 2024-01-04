@@ -98,9 +98,9 @@ public class GreetingsController {
 	}
 
 	// método de pesquisa
-	@GetMapping(value = "buscaruserid")
+	@GetMapping(value = "buscarUserId")
 	@ResponseBody
-	public ResponseEntity<Usuario> buscaruserid(@RequestParam(name = "idUser") Long idUser) {
+	public ResponseEntity<Usuario> buscarUserId(@RequestParam(name = "idUser") Long idUser) {
 
 		Usuario usuario = usuarioRepository.findById(idUser).get();
 
@@ -111,7 +111,7 @@ public class GreetingsController {
 	// Buscar por nome
 	@GetMapping(value = "buscarPorNome")
 	@ResponseBody
-	public ResponseEntity<List<Usuario>> buscarPorNome(@RequestParam(name = "name") String name) {
+	public ResponseEntity<List<Usuario>> buscarPorNome(@RequestParam(name = "name") String name) { //recebe os dados para consultar
 
 		List<Usuario> usuario = usuarioRepository.buscarPorNome(name.trim().toUpperCase()); // trim() tira o espaço
 
