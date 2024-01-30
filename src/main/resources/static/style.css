@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.tabela-overflow {
+	height: 300px;
+	overflow: scroll;
+}
+
+main {
+	margin-top: 5%;
+	padding: 10px;
+	background-color: #97971a00;
+	border-radius: 20px;
+	box-shadow: -1px 1px 13px 0px #00000038;
+}
+
+h1 {
+	text-align: center;
+}
